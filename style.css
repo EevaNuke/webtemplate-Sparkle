@@ -1,0 +1,452 @@
+/* CSS Document */
+/* general, desktop */
+
+/* -----------------------------
+	- ogólne
+	- zablokowane menu
+	- nagłówek
+	- sekcja 1 - info
+	- sekcja 2 - services
+	- sekcja 3 - portfolio
+	- sekcja 4 - video
+	- sekcja 5 - team
+	- sekcja 6 - about us
+	- stopka
+----------------------------- */
+
+html { scroll-behavior: smooth; }
+body { 
+	margin: 0; padding: 0; 
+	background: #fff; color: #474747; line-height: 2;
+	font-family: Raleway, Arial, sans-serif; font-size: 14px; 
+	text-align: center; letter-spacing: 1px;
+  }
+.cleaner { width: 0; height: 0; margin: 0; padding: 0; clear: both; }
+
+div, p, ul, ol, li, h1, h2, h3 { margin: 0; padding: 0; }
+
+a { color: #000; text-decoration: none; }
+
+h1 {
+	color: #fff;
+	font-size: 20px; font-weight: normal;
+	text-transform: uppercase; letter-spacing: 17px;
+  }
+h2 {
+	margin-bottom: 15px; padding-top: 70px;
+	background: url("img/axes.svg") center top no-repeat;
+	color: #000;
+	font-size: 18px; font-weight: normal;
+	text-transform: uppercase; letter-spacing: 15px;
+  }
+p.sec_desc { width: 760px; margin: 0 auto 80px; }
+
+header, footer, section, #locked_header { width: 1170px; margin: 0 auto; }
+
+.yellow_button {
+	display: inline-block;
+	margin: 0 auto; padding: 14px 39px; 
+	background: #ffe500; color: #000;
+	border: 1px solid #ffe500;
+	font-size: 10px; letter-spacing: 3px;
+	text-transform: uppercase; font-weight: bold;
+  }
+
+.whiteblock {
+	width: 250px; 
+	margin: 13px 15px; padding: 10px;
+	background: #fff;
+	float: left;
+  }
+	.whiteblock .title { 
+		color: #000; 
+		text-transform: uppercase; letter-spacing: 6px; 
+	  }
+
+.appears, .appears_seq { opacity: 0; }
+		
+		@keyframes appear {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		  }
+
+			
+/* ------------------------------------------------------------
+					zablokowane menu 
+------------------------------------------------------------ */
+
+	#locked_header_box { 
+		width: 100%; 
+		position: fixed; top: 0; 
+		z-index: 1000; 
+		background: none;
+		transition: background 0.5s;
+	  }
+	#locked_header { margin: 15px auto 10px; }
+		#header_logo { float: left; }
+		#menu_button { float: right; cursor: pointer; transition: transform 1s; }
+
+		#locked_header a { color: #fff; }
+		#locked_header a:hover { color: #ffe500; }
+		#locked_header ul { 
+			list-style-type: none; 
+			height: 0;
+			color: #fff; 
+			padding: 5px 0;
+			font-size: 20px;
+			text-transform: uppercase; letter-spacing: 3px;
+			transition: height 1s;
+			overflow: hidden;
+		  }
+			#locked_header ul li { margin: 10px 0; }
+
+			
+/* ------------------------------------------------------------
+					nagłówek (hero) 
+------------------------------------------------------------ */
+
+#home_box { background: url("img/header.png") center bottom no-repeat #191919; }
+#home { 
+	height: 450px;
+	padding: 350px 0 0;
+	color: #fff; text-align: center; 
+	letter-spacing: 6px;
+  }
+#home_box .cleaner { height: 1px; }
+	
+	#home h1 { margin-bottom: 35px; }
+	
+	#home .yellow_button{ margin-top: 50px; }
+	#home .yellow_button:hover { background: none; color: #fff; }
+
+/* ------------------------------------------------------------
+					koniec nagłówka
+------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------
+					sekcja 1 - info
+------------------------------------------------------------ */
+
+#our_info { padding: 165px 0 215px; }
+
+	#our_info img { margin: 0 auto 80px; }
+	@media only screen and (min-width: 600px) {
+		#our_info p { width: 590px; margin: 0 auto; }
+	  }
+
+/* ------------------------------------------------------------
+					koniec sekcji 1 - info
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 2 - services
+------------------------------------------------------------ */
+
+#our_services_box { background: #f4f4f4; }
+#our_services2_box { background: #191919; }
+#our_services { padding: 80px 0 27px; }
+#our_services2 { padding: 50px 0; color: #000; }
+
+	#services_box .whiteblock:first-child, 
+	#skills_box .whiteblock:first-child, 
+	#stats_box .whiteblock:first-child { margin-left: 0; }
+	#services_box .whiteblock:nth-child(4), 
+	#skills_box .whiteblock:nth-child(4), 
+	#stats_box .whiteblock:nth-child(4) { margin-right: 0; }
+
+	#our_services .service { width: 230px; padding: 40px 20px 20px; }
+		#our_services .service .image { margin-bottom: 25px; line-height: 60px; }
+			#our_services .service .image img { display: inline-block; vertical-align: bottom; }
+		#our_services .service .title { font-weight: bold; }
+
+	#our_services .skills { text-align: left; position: relative; }
+		#our_services .skills .meter_label { 
+			color: #000; 
+			font-size: 13px; font-weight: bold; 
+			letter-spacing: 2px; 
+		  }
+		#our_services .skills .meter_box { 
+			width: 100%; height: 5px; 
+			margin: 7px 0 12px;
+			background: #f4f4f4; 
+		  }
+			#our_services .skills .meter { width: 0px; height: 5px; background: #ffe500; float: left; }
+
+					@keyframes meter1 {
+						from { width: 0; }
+						to { width: 87%; }
+					  }
+					@keyframes meter2 {
+						from { width: 0; }
+						to { width: 98%; }
+					  }
+					@keyframes meter3 {
+						from { width: 0; }
+						to { width: 70%; }
+					  }
+					@keyframes meter4 {
+						from { width: 0; }
+						to { width: 95%; }
+					  }
+					@keyframes meter5 {
+						from { width: 0; }
+						to { width: 75%; }
+					  }
+					@keyframes meter6 {
+						from { width: 0; }
+						to { width: 90%; }
+					  }
+					@keyframes meter7 {
+						from { width: 0; }
+						to { width: 98%; }
+					  }
+					@keyframes meter8 {
+						from { width: 0; }
+						to { width: 95%; }
+					  }
+					@keyframes meter9 {
+						from { width: 0; }
+						to { width: 70%; }
+					  }
+					@keyframes meter10 {
+						from { width: 0; }
+						to { width: 60%; }
+					  }
+					@keyframes meter11 {
+						from { width: 0; }
+						to { width: 80%; }
+					  }
+					@keyframes meter12 {
+						from { width: 0; }
+						to { width: 71%; }
+					  }
+	
+	#our_services2 .stats { 
+		padding: 10px 10px 15px;
+		font-size: 12px; letter-spacing: 3px;
+		text-transform: uppercase; 
+		font-weight: 600; 
+	  }
+		#our_services2 .stats .counter { 
+			font-size: 15px; font-weight: 700;
+		  }
+
+/* ------------------------------------------------------------
+					koniec sekcji 2 - services
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 3 - portfolio
+------------------------------------------------------------ */
+
+#our_portfolio { padding: 80px 0 85px; }
+
+	#our_portfolio #proj_selector {
+		list-style-type: none; 
+		margin-bottom: 90px;
+	  }
+	
+		#our_portfolio #proj_selector li {
+			cursor: pointer; 
+			width: 234px; 
+			margin: 20px 0; padding: 24px 0;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+			font-size: 12px;
+			text-transform: uppercase; letter-spacing: 3px;
+			float: left;
+		  }
+		#our_portfolio #proj_selector li:hover {
+			border-top: 1px solid #ffe500;
+			border-bottom: 1px solid #ffe500;
+		  }
+		#our_portfolio #proj_selector img {	margin: 0 67px;	float: left; }
+
+		
+	#our_portfolio .project { 
+		width: 290px; 
+		margin: 0 3px 3px 0;
+		float: left; position: relative;
+	  }
+		@media only screen and (min-width: 600px) { #our_portfolio .project { height: 320px; } }
+	#our_portfolio .project:nth-child(4n) { margin-right: 0; }
+	#our_portfolio .project:hover .description { opacity: 1; }
+
+		#our_portfolio .project img { width: 100%; position: absolute; top: 0; left: 0; z-index: 50; }
+			
+		#our_portfolio .project .description {
+			width: 220px; height: 180px;
+			margin: 70px auto; padding: 0 15px;
+			background: #fff;
+			font-size: 12px;
+			position: relative;
+			z-index: 100;
+			opacity: 0;
+			transition: opacity 0.3s;
+		  }
+			#our_portfolio .description span {
+				display: block;
+				margin-bottom: 10px;
+				text-transform: uppercase; letter-spacing: 3px; 
+				font-weight: 600;
+			  }
+			
+			#our_portfolio .description .yellow_margin_up, #our_portfolio .description .yellow_margin_down {
+				width: 80%; height: 25px;
+				margin: 0 auto;
+				background: #ffe500; 
+			  }
+			#our_portfolio .description .yellow_margin_up {	position: relative; top: -25px; }
+			#our_portfolio .description .yellow_margin_down { position: relative; bottom: -25px; }
+
+	#our_portfolio .yellow_button { margin-top: 85px; }
+	#our_portfolio .yellow_button:hover { background: none; }
+	
+/* ------------------------------------------------------------
+					koniec sekcji 3 - portfolio
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 4 - video
+------------------------------------------------------------ */
+
+#our_video_box { background: url("img/city.jpg") fixed center center no-repeat #000; }
+#our_video_box .darken { background: rgba(0,0,0,0.5); }
+#our_video { color: #fff; padding: 145px 0 160px; }
+
+	#our_video #view_vid {
+		cursor: pointer;
+		width: 300px; height: 26px;
+		margin: 0 auto; padding: 25px 40px;
+		border: 1px solid #ffe500;
+		background: rgba(0,0,0,0.5); color: #ffe500;
+		text-align: center; text-transform: uppercase; letter-spacing: 12px;
+	  }
+	
+/* ------------------------------------------------------------
+					koniec sekcji 4 - video
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 5 - team
+------------------------------------------------------------ */
+
+#our_team { padding: 80px 0 30px; }
+	
+	#our_team #team_box .team {
+		width: 250px; 
+		margin: 13px 15px; 
+		background: #fff;
+		float: left;
+	  }
+	#our_team #team_box .team:first-child { margin-left: 0; }
+	#our_team #team_box .team:nth-child(4) { margin-right: 0; }
+	
+		#our_team .team .portrait { position: relative; line-height: 1; }
+			#our_team .team .portrait img { width: 100%; }
+		
+			#our_team .team .signature { 
+				width: 100%; 
+				margin: 0; padding: 15px 0;
+				background: rgba(255,229,0,0.8); color: #000;
+				position: absolute; bottom: 0; left: 0;
+				font-size: 16px; font-weight: 500;
+				letter-spacing: 3px;
+			  }
+	
+		#our_team .team .desc_box { background: url("img/axes.svg") center center no-repeat; }
+		#our_team .team .description { 
+			margin: 0; padding: 15px 15px 10px;
+			background: rgba(255,255,255,0.9);
+			font-size: 12px; 
+		  }
+	
+/* ------------------------------------------------------------
+					koniec sekcji 5 - team
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 6 - about us
+------------------------------------------------------------ */
+
+#about_us_box {
+	background-color: #fff;
+	background-image: linear-gradient(#fff, #fff 33%, #ffe500 33%, #ffe500 67%, #fff 67%, #fff);
+  }
+#about_us { padding: 50px 0; height: 580px; }
+
+	#about_us .column { 
+		width: 570px; height: 100%;
+		float: left;
+		position: relative;
+	  }
+	#about_us .column:first-child { margin-right: 30px; }
+
+		#about_us #blackboard { 
+			width: 420px; height: 275px; 
+			padding: 50px 75px;
+			background: #191919; color: #fff; 
+			font-size: 12px; text-align: left;
+		  }
+		
+		#about_us .quote { 
+			width: 410px; 
+			margin: 60px auto;
+			font-size: 13px;
+		  }
+			#about_us .quote .author { 
+				margin-top: 10px; 
+				font-weight: bold; text-align: left; 
+			  }
+			#about_us .column:last-child .author { text-align: right; }
+		
+		#about_us img { 
+			width: 570px; height: 375px; 
+			background: #191919;
+			position: absolute; bottom: 0; left: 0;
+		  }
+	
+/* ------------------------------------------------------------
+					koniec sekcji 6 - about us
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+							stopka
+------------------------------------------------------------ */
+
+#our_footer_box { background: #191919; }
+#our_footer { 
+	padding: 90px 0 50px; 
+	color: #fff; 
+	font-size: 12px; text-align: left;
+  }
+
+	#our_footer h3 { font-size: 15px; font-weight: normal; }
+	#our_footer p { margin: 15px 0 45px; }
+
+	#our_footer .col_big, #our_footer .col_small { 
+		height: 100%; 
+		margin: 0; 
+		float: left; position: relative; 
+	  }
+	#our_footer .col_big { width: 370px; }
+	#our_footer .col_big a { color: #ffe500; }
+	#our_footer .col_small { width: 155px; margin: 0 30px; }
+	#our_footer .col_small a { color: #fff; }
+	
+		#our_footer #footer_logo { margin: 0 13px; }
+		
+		#our_footer nav ul { list-style-type: none; }
+			#our_footer nav ul li { cursor: pointer; margin-top: 15px; }
+		
+		#our_footer #contact_button { 
+			background: #ffe500; color: #000;
+			margin-bottom: 40px; padding: 10px 110px; 
+			border: 1px solid #ffe500;
+			border-radius: 20px;
+			font-weight: bold;
+		  }
+		#our_footer #contact_button:hover { background: none; color: #ffe500 }
+			
+		#our_footer #socials {line-height: 1; }
+			#our_footer #socials img { margin: 0 10px 0 0; }
+	
+/* ------------------------------------------------------------
+						koniec stopki
+------------------------------------------------------------ */

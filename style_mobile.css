@@ -1,0 +1,197 @@
+/* CSS Document */
+/* tablet styles */
+
+/* -----------------------------
+	- ogólne
+	- zablokowane menu
+	- nagłówek
+	- sekcja 1 - info
+	- sekcja 2 - services
+	- sekcja 3 - portfolio
+	- sekcja 4 - video
+	- sekcja 5 - team
+	- sekcja 6 - about us
+	- stopka
+----------------------------- */
+
+@media only screen and (max-width: 600px) {
+	
+	body { font-size: 16px; line-height: 1.8; }
+	
+	h1 { font-size: 30px; }
+	h2 { font-size: 24px; }
+	p.sec_desc { width: 90%; margin: 0 5% 40px; }
+
+	header, footer, section, #locked_header { width: 100%; padding: 0 5%; }
+
+	.yellow_button { font-size: 14px; }
+
+	.whiteblock {
+		width: 80% !important; 
+		margin: 15px 5% !important; 
+		padding: 10px 5% !important;
+	  }
+			
+			
+/* ------------------------------------------------------------
+					zablokowane menu 
+------------------------------------------------------------ */
+
+		#locked_header { padding: 0; }
+		
+			#locked_header a { color: #ffe500; }
+			#locked_header img { margin: 0 10px; }
+
+/* ------------------------------------------------------------
+					nagłówek (hero) 
+------------------------------------------------------------ */
+
+	#home_box { background: #191919; }
+	#home { padding: 130px 0 20px; }
+		
+		#home h1 { margin: 0 5% 50px; }
+
+/* ------------------------------------------------------------
+					koniec nagłówka
+------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------
+					sekcja 1 - info
+------------------------------------------------------------ */
+
+	#our_info { padding: 145px 0 115px; }
+
+/* ------------------------------------------------------------
+					koniec sekcji 1 - info
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 2 - services
+------------------------------------------------------------ */
+
+		#our_services .service { padding: 40px 5% 20px !important; font-size: 16px; }
+
+		#our_services .skills { padding: 10px 5%; }
+			#our_services .skills .meter_label { font-size: 14px; }
+			#our_services .skills .meter_box { width: 100%; }
+		
+		#our_services2 .stats { font-size: 16px; }
+			#our_services2 .stats .counter { font-size: 18px; }
+
+/* ------------------------------------------------------------
+					koniec sekcji 2 - services
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 3 - portfolio
+------------------------------------------------------------ */
+
+		#our_portfolio #proj_selector { margin-bottom: 40px; }
+		
+			#our_portfolio #proj_selector li {
+				width: 90%; 
+				margin: 10px 20px; padding: 15px 0;
+				font-size: 14px;
+			  }
+			#our_portfolio #proj_selector img { display: none; }
+
+			
+		#our_portfolio .project { 
+			width: 90%; max-width: 310px; 
+			margin: 0 auto 20px; padding: 50px 0;
+			float: none; position: relative;
+		  }
+		#our_portfolio .project:nth-child(4n) { margin-right: auto; }
+				
+			#our_portfolio .project .description {
+				height: 230px;
+				margin: 0 auto; 
+				font-size: 16px;
+			  }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 3 - portfolio
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 4 - video
+------------------------------------------------------------ */
+
+	#our_video { width: 100%; }
+	
+		#our_video #view_vid { width: 80%; height: auto; padding: 25px 5%; }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 4 - video
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 5 - team
+------------------------------------------------------------ */
+		
+		#our_team #team_box .team { width: 90%; margin: 15px 5%; }
+		#our_team #team_box .team:nth-child(2n+1) { margin-left: 5%; }
+		#our_team #team_box .team:nth-child(2n) { margin-right: 5%; }
+		
+				#our_team .team .signature { font-size: 18px; }
+		
+			#our_team .team .description { font-size: 14px; }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 5 - team
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 6 - about us
+------------------------------------------------------------ */
+
+	#about_us_box {
+		background-image: linear-gradient(#fff, #fff 58%, #ffe500 58%, #ffe500 82%, #fff 82%, #fff);
+	  }
+	#about_us { height: auto; }
+
+		#about_us .column { width: 100%; }
+
+			#about_us #blackboard { 
+				width: 90%; height: auto;
+				padding: 30px 5%; margin-bottom: 60px;
+				font-size: 14px; 
+			  }
+			
+			#about_us .quote { 
+				width: 90%;
+				margin: 40px 5%;
+				font-size: 16px;
+			  }
+				#about_us .quote .author { text-align: right; }
+			
+			#about_us img { 
+				width: 100%; height: auto;
+				margin-top: 30px;
+				position: relative;
+			  }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 6 - about us
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+							stopka
+------------------------------------------------------------ */
+
+	#our_footer { 
+		width: 90%;
+		margin: 0 5%; padding: 70px 0 80px; 
+		text-align: center; font-size: 14px; 
+	  }
+
+		#our_footer h3 { font-size: 20px; }
+		#our_footer p { margin-bottom: 30px; }
+
+		#our_footer .col_big, #our_footer .col_small { 
+			width: 100%; height: auto; 
+			margin: 20px 0;
+		  }
+		#our_footer #contact_button { padding: 10px 20px; }
+		
+/* ------------------------------------------------------------
+						koniec stopki
+------------------------------------------------------------ */
+
+  }

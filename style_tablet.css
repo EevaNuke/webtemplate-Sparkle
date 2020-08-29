@@ -1,0 +1,191 @@
+/* CSS Document */
+/* tablet styles */
+
+/* -----------------------------
+	- ogólne
+	- zablokowane menu
+	- nagłówek
+	- sekcja 1 - info
+	- sekcja 2 - services
+	- sekcja 3 - portfolio
+	- sekcja 4 - video
+	- sekcja 5 - team
+	- sekcja 6 - about us
+	- stopka
+----------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 1170px) {
+	
+	body { font-size: 20px; line-height: 1.8; }
+	
+	h1 { font-size: 30px; }
+	h2 { font-size: 24px; }
+	p.sec_desc { width: 600px; margin-bottom: 60px; }
+
+	header, footer, section, #locked_header { width: 600px; }
+
+	.yellow_button { font-size: 15px; }
+
+	.whiteblock {
+		width: 270px; 
+		margin: 13px 10px; 
+	  }
+			
+			
+/* ------------------------------------------------------------
+					zablokowane menu 
+------------------------------------------------------------ */
+
+			#locked_header a { color: #ffe500; }
+
+/* ------------------------------------------------------------
+					nagłówek (hero) 
+------------------------------------------------------------ */
+
+	#home_box { background: #191919; }
+	#home { padding: 200px 0 0; }
+		
+		#home h1 { margin-bottom: 50px; }
+
+/* ------------------------------------------------------------
+					koniec nagłówka
+------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------
+					sekcja 1 - info
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+					koniec sekcji 1 - info
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 2 - services
+------------------------------------------------------------ */
+
+		#services_box .whiteblock:nth-child(2n+1), 
+		#skills_box .whiteblock:nth-child(2n+1), 
+		#stats_box .whiteblock:nth-child(2n+1) { margin-left: 0; }
+		#services_box .whiteblock:nth-child(2n), 
+		#skills_box .whiteblock:nth-child(2n), 
+		#stats_box .whiteblock:nth-child(2n) { margin-right: 0; }
+
+		#our_services .service { width: 250px; font-size: 18px; }
+
+		#our_services .skills { width: 250px; padding: 10px 20px; }
+			#our_services .skills .meter_label { font-size: 16px; }
+		
+		#our_services2 .stats { font-size: 16px; }
+			#our_services2 .stats .counter { font-size: 18px; }
+
+/* ------------------------------------------------------------
+					koniec sekcji 2 - services
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 3 - portfolio
+------------------------------------------------------------ */
+
+		#our_portfolio #proj_selector { margin-bottom: 60px; }
+		
+			#our_portfolio #proj_selector li {
+				width: 260px; 
+				margin: 20px 20px; 
+				font-size: 16px;
+			  }
+			#our_portfolio #proj_selector img { margin: 0 250px; clear: both; }
+
+			
+		#our_portfolio .project { margin: 0 20px 10px 0; }
+		#our_portfolio .project:nth-child(2n) { margin-right: 0; }
+				
+			#our_portfolio .project .description {
+				height: 230px;
+				margin: 45px auto; 
+				font-size: 16px;
+			  }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 3 - portfolio
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 4 - video
+------------------------------------------------------------ */
+
+	#our_video { width: 100%; }
+	
+		#our_video #view_vid { width: 400px; height: 30px; }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 4 - video
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 5 - team
+------------------------------------------------------------ */
+		
+		#our_team #team_box .team { width: 290px; margin: 15px 10px; }
+		#our_team #team_box .team:nth-child(2n+1) { margin-left: 0; }
+		#our_team #team_box .team:nth-child(2n) { margin-right: 0; }
+		
+				#our_team .team .signature { font-size: 18px; }
+		
+			#our_team .team .description { font-size: 16px; }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 5 - team
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+					sekcja 6 - about us
+------------------------------------------------------------ */
+
+	#about_us_box {
+		background-image: linear-gradient(#fff, #fff 64%, #ffe500 64%, #ffe500 82%, #fff 82%, #fff);
+	  }
+	#about_us { height: auto; }
+
+		#about_us .column { width: 600px; }
+
+			#about_us #blackboard { 
+				width: 500px; height: auto;
+				padding: 30px 50px; margin-bottom: 60px;
+				font-size: 16px; 
+			  }
+			
+			#about_us .quote { 
+				width: 500px;
+				margin: 40px auto;
+				font-size: 16px;
+			  }
+				#about_us .quote .author { text-align: right; }
+			
+			#about_us img { 
+				width: 100%; 
+				margin-top: 40px;
+				position: relative;
+			  }
+		
+/* ------------------------------------------------------------
+					koniec sekcji 6 - about us
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+							stopka
+------------------------------------------------------------ */
+
+	#our_footer { 
+		padding: 70px 0 80px; 
+		text-align: center; font-size: 16px; 
+	  }
+
+		#our_footer h3 { font-size: 20px; }
+		#our_footer p { margin-bottom: 30px; }
+
+		#our_footer .col_big, #our_footer .col_small { 
+			width: 100%; height: auto; 
+			margin: 20px 0;
+		  }
+		
+/* ------------------------------------------------------------
+						koniec stopki
+------------------------------------------------------------ */
+
+  }
