@@ -52,7 +52,7 @@ function showProjects(klasa) {
 		for(let obj of obiekty) {
 			obj.style.animation = "appear 1.5s ease-out "+(j*0.2)+"s forwards";
 			obj.style.display = "block";
-			j++
+			j++;
 		  }
 	  }
   }
